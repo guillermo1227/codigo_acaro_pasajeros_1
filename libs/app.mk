@@ -4,74 +4,74 @@
 # the next time 'make getlibs' is run.
 #
 bsp-assistant:
-	(cd Firmware_Upgrade_via_OTA_20; make bsp-assistant)
+	(cd BLE-STV_V3_codigo_acaro_pasajeros_1.0_C; make bsp-assistant)
 .PHONY: bsp-assistant
 
 config_bt:
-	(cd Firmware_Upgrade_via_OTA_20; make config_bt)
+	(cd BLE-STV_V3_codigo_acaro_pasajeros_1.0_C; make config_bt)
 .PHONY: config_bt
 
 bt-configurator:
-	(cd Firmware_Upgrade_via_OTA_20; make bt-configurator)
+	(cd BLE-STV_V3_codigo_acaro_pasajeros_1.0_C; make bt-configurator)
 .PHONY: bt-configurator
 
 capsense-configurator:
-	(cd Firmware_Upgrade_via_OTA_20; make capsense-configurator)
+	(cd BLE-STV_V3_codigo_acaro_pasajeros_1.0_C; make capsense-configurator)
 .PHONY: capsense-configurator
 
 capsense-tuner:
-	(cd Firmware_Upgrade_via_OTA_20; make capsense-tuner)
+	(cd BLE-STV_V3_codigo_acaro_pasajeros_1.0_C; make capsense-tuner)
 .PHONY: capsense-tuner
 
 config:
-	(cd Firmware_Upgrade_via_OTA_20; make config)
+	(cd BLE-STV_V3_codigo_acaro_pasajeros_1.0_C; make config)
 .PHONY: config
 
 device-configurator:
-	(cd Firmware_Upgrade_via_OTA_20; make device-configurator)
+	(cd BLE-STV_V3_codigo_acaro_pasajeros_1.0_C; make device-configurator)
 .PHONY: device-configurator
 
 config_ezpd:
-	(cd Firmware_Upgrade_via_OTA_20; make config_ezpd)
+	(cd BLE-STV_V3_codigo_acaro_pasajeros_1.0_C; make config_ezpd)
 .PHONY: config_ezpd
 
 ez-pd-configurator:
-	(cd Firmware_Upgrade_via_OTA_20; make ez-pd-configurator)
+	(cd BLE-STV_V3_codigo_acaro_pasajeros_1.0_C; make ez-pd-configurator)
 .PHONY: ez-pd-configurator
 
 modlibs:
-	(cd Firmware_Upgrade_via_OTA_20; make modlibs)
+	(cd BLE-STV_V3_codigo_acaro_pasajeros_1.0_C; make modlibs)
 .PHONY: modlibs
 
 library-manager:
-	(cd Firmware_Upgrade_via_OTA_20; make library-manager)
+	(cd BLE-STV_V3_codigo_acaro_pasajeros_1.0_C; make library-manager)
 .PHONY: library-manager
 
 config_lin:
-	(cd Firmware_Upgrade_via_OTA_20; make config_lin)
+	(cd BLE-STV_V3_codigo_acaro_pasajeros_1.0_C; make config_lin)
 .PHONY: config_lin
 
 lin-configurator:
-	(cd Firmware_Upgrade_via_OTA_20; make lin-configurator)
+	(cd BLE-STV_V3_codigo_acaro_pasajeros_1.0_C; make lin-configurator)
 .PHONY: lin-configurator
 
 qspi-configurator:
-	(cd Firmware_Upgrade_via_OTA_20; make qspi-configurator)
+	(cd BLE-STV_V3_codigo_acaro_pasajeros_1.0_C; make qspi-configurator)
 .PHONY: qspi-configurator
 
 seglcd-configurator:
-	(cd Firmware_Upgrade_via_OTA_20; make seglcd-configurator)
+	(cd BLE-STV_V3_codigo_acaro_pasajeros_1.0_C; make seglcd-configurator)
 .PHONY: seglcd-configurator
 
 smartio-configurator:
-	(cd Firmware_Upgrade_via_OTA_20; make smartio-configurator)
+	(cd BLE-STV_V3_codigo_acaro_pasajeros_1.0_C; make smartio-configurator)
 .PHONY: smartio-configurator
 
 config_usbdev:
-	(cd Firmware_Upgrade_via_OTA_20; make config_usbdev)
+	(cd BLE-STV_V3_codigo_acaro_pasajeros_1.0_C; make config_usbdev)
 .PHONY: config_usbdev
 
 usbdev-configurator:
-	(cd Firmware_Upgrade_via_OTA_20; make usbdev-configurator)
+	(cd BLE-STV_V3_codigo_acaro_pasajeros_1.0_C; make usbdev-configurator)
 .PHONY: usbdev-configurator
 

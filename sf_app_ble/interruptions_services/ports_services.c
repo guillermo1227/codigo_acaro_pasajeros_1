@@ -32,6 +32,7 @@
  *********************************************************************************************/
 void button_cback_26( void *data, uint8_t port_pin )
 {
+	//WICED_BT_TRACE("\n *************************************************** \n");
 	/*if( GPIO_PIN_OUTPUT_HIGH == wiced_hal_gpio_get_pin_output(LED_GPIO_06 ) )
 	{
 		 wiced_hal_gpio_set_pin_output( LED_GPIO_06, GPIO_PIN_OUTPUT_LOW);

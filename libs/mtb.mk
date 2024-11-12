@@ -10,7 +10,7 @@
 # The search paths for the included middleware
 SEARCH_btsdk-ota=../mtb_shared/wiced_btsdk/dev-kit/libraries/btsdk-ota/release-v4.2.0
 SEARCH_btsdk-peer-apps-ota=../mtb_shared/wiced_btsdk/tools/btsdk-peer-apps-ota/release-v3.3.0
-SEARCH_TARGET_CYBLE-333074-EVAL-M2B=../mtb_shared/wiced_btsdk/dev-kit/bsp/TARGET_CYBLE-333074-EVAL-M2B/release-v3.3.0
+SEARCH_TARGET_CYBLE-343072-EVAL-M2B=../mtb_shared/wiced_btsdk/dev-kit/bsp/TARGET_CYBLE-343072-EVAL-M2B/release-v4.6.2
 SEARCH_20835B1=../mtb_shared/wiced_btsdk/dev-kit/baselib/20835B1/release-v4.2.1
 SEARCH_btsdk-common=../mtb_shared/wiced_btsdk/dev-kit/libraries/btsdk-common/release-v4.2.1
 SEARCH_btsdk-include=../mtb_shared/wiced_btsdk/dev-kit/btsdk-include/release-v4.2.1
@@ -21,7 +21,7 @@ SEARCH_core-make=../mtb_shared/core-make/release-v1.9.1
 # Search libraries added to build
 SEARCH+=$(SEARCH_btsdk-ota)
 SEARCH+=$(SEARCH_btsdk-peer-apps-ota)
-SEARCH+=$(SEARCH_TARGET_CYBLE-333074-EVAL-M2B)
+SEARCH+=$(SEARCH_TARGET_CYBLE-343072-EVAL-M2B)
 SEARCH+=$(SEARCH_20835B1)
 SEARCH+=$(SEARCH_btsdk-common)
 SEARCH+=$(SEARCH_btsdk-include)
@@ -32,7 +32,7 @@ SEARCH+=$(SEARCH_core-make)
 -include $(CY_INTERNAL_APP_PATH)/importedbsp.mk
 COMPONENTS += MW_BTSDK_OTA
 COMPONENTS += MW_BTSDK_PEER_APPS_OTA
-COMPONENTS += MW_TARGET_CYBLE_333074_EVAL_M2B
+COMPONENTS += MW_TARGET_CYBLE_343072_EVAL_M2B
 COMPONENTS += MW_20835B1
 COMPONENTS += MW_BTSDK_COMMON
 COMPONENTS += MW_BTSDK_INCLUDE

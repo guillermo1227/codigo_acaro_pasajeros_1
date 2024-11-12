@@ -9,9 +9,10 @@
 #define SF_APP_BLE_INIT_SYSTEM_CONFIG_PORTS_H_
 
 //#define PORT_INT_4                               WICED_P04
-#define PORT_INT_14                              WICED_P14
+//#define PORT_INT_14                              WICED_P14	/* Boton de tag vehiculo comentado */
 //#define PORT_INT_13                              WICED_P13
 //#define PORT_INT_26                              WICED_P26
+#define PORT_INT_14                              WICED_P00    /* Boton de placa CYW9208EVB-02 */
 
 //#define LED_GPIO_00                              WICED_P00
 #define LED_GPIO_01                              WICED_P01

@@ -373,3 +373,45 @@ void      f_timer_CER( uint32_t data )
 {
 	clear_cer();
 }
+
+/***************************************************************
+ * Function name: f_timer_driver
+ * Description: The time has elapsed to clear device detection
+ *               using the external reader
+ * @parameter   data: data with current time
+ ***************************************************************/
+void      f_timer_driver( uint32_t data )
+{
+	 wiced_hal_gpio_configure_pin( LED_GPIO_03, GPIO_OUTPUT_ENABLE, GPIO_PIN_OUTPUT_LOW );  /* Risk Zone P05 */
+	 stop_TimerDriver();
+	 send_again();
+}
+
+/***************************************************************
+ * Function name: f_drop_timer
+ * Description: The time has elapsed to clear the designated driver
+ *
+ * @parameter   data: void
+ ***************************************************************/
+void      f_drop_timer( uint32_t data )
+{
+	stop_DropDriver();
+	errace_data();
+}
+
+/***************************************************************
+ * Function name: f_delete_timer
+ * Description: Delete all passengers register, only when reboot device
+ * */
+void f_delete_timer( uint32_t data )
+{
+	WICED_BT_TRACE("DEL\n");
+	WICED_BT_TRACE("DEL\n");
+	stop_TmerDelete();
+}
+
+void f_send_again( uint32_t data )
+{
+	send_passenger();
+	stop_TimerPasenger();
+}

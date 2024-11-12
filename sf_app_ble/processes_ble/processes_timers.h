@@ -42,6 +42,13 @@ void                            f_timer_er( uint32_t data );
 void                            f_timer_ach( uint32_t data );
 void                            f_timer_CER( uint32_t data );
 
+void      						f_timer_driver( uint32_t data );
+void      						f_drop_timer( uint32_t data );
+void      						f_delete_timer( uint32_t data );
+void      						f_send_again( uint32_t data ); /* ************** */
+extern void		                send_passenger(void);
+extern void						stop_TimerPasenger(void);
+
 extern void start_TOnline(void);
 extern void start_TOnline_long(void);
 extern void prevention_status(void);
@@ -58,5 +65,12 @@ extern void print_cst(void);
 extern void gap_transferER(void);
 extern void evalue_ach(void);
 extern void clear_cer(void);
+extern void send_passenger(void);  /* ******* */
+
+extern void stop_TimerDriver(void);
+extern void stop_DropDriver(void);
+extern void errace_data(void);
+extern void send_again(void);
+extern void stop_TmerDelete(void);
 
 #endif /* SF_APP_BLE_PROCESSES_BLE_PROCESSES_TIMERS_H_ */

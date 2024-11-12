@@ -10,8 +10,14 @@
 
       #define clk_radc 20
       #define clk_radc120 120
+	  #define NUM_PASAJEROS 4
+
 	  wiced_timer_t timer_radc;
 	  void        f_timer_radc( uint32_t data );
+
+	  uint8_t RSSI_CLOSER = 40;
+	  uint8_t RSSI_DRIVER = 78;
+	  uint8_t status_driver=0;  /* driver */
 
 extern	uint8_t dla;
 extern	uint8_t dlb;
@@ -156,6 +162,7 @@ char datav_dbs[7] ={0};
 char datam_buffer[350];
 char datam_buffer2[350];
 char datam_buffer3[350];
+char datam_buffer4[50];   /* Store the passengers' mac */
 
 char datam_bufferdbs[50];
 char datam_bufferact[350];
@@ -186,6 +193,18 @@ int8_t datac_mact=0;
 
 int8_t datac_st=0;
 
+int8_t datac_pasaj =0;   /* --> llevar el conteo de pasajeros */
+int8_t q;		/* Sacar la longituf de mac_pasajeros */
+int8_t data_s6 = 0;
+char *valor;
+char mac_help[6];
+
+typedef struct
+{
+	char mac_pasajero[6];
+	uint8_t out_value;
+}pasajeros;
+pasajeros T_pasajeros[4];  /* Total de pasajeros */
 //---------------------------------------------------------------
 //-----------------------------------------------------------------
 int8_t datac_comp  =0;
@@ -232,7 +251,7 @@ void               print_cst(void);
 void               event_mlfb(void);
 void               clear_cer(void);
 void               filt_cfb(uint8_t *data_cfb2);
-
+void               send_passenger(void);
 
 extern void gap_cfb(char *data_cfb);
 extern void gap_cfbV(char *data_cfbV);
@@ -258,7 +277,8 @@ extern             void init_event_er(void);
 extern             void Start_Timerach(void);
 extern             void Stop_Timerach(void);
 extern             void start_TreturnCER(void);
+extern             void timer_sendpassenger(void);
 
-
+extern			   void Know_driver(wiced_bt_ble_scan_results_t *p_scan_result);
 
 #endif /* SF_APP_BLE_GAP_SCAN_OBSERVE_FUNCTION_H_ */
